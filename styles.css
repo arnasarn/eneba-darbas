@@ -111,7 +111,8 @@ body {
 }
 
 .listing-card {
-  height: 400px;
+  min-height: 400px;
+  min-width: 150px;
   color: #727ba6;
 }
 
@@ -154,10 +155,8 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding: 0 4rem;
-  width: 80%;
   display: flex;
   justify-content: center;
-  background-color: #4618ac;
 
   button {
     all: unset;
@@ -201,8 +200,10 @@ header {
 }
 
 .search-bar {
+  all: unset;
   border: none;
   background-color: transparent;
+  flex: 1;
 }
 
 .flag {
@@ -272,12 +273,11 @@ nav .nav-contents ul .item-burger {
 }
 
 .nav-contents {
-  height: 50px;
   width: 80%;
   background-color: rgb(52, 18, 129);
   display: flex;
   justify-content: space-between;
-  padding: 0 4rem;
+  padding: 0rem 4rem;
 }
 
 ul {
@@ -286,7 +286,7 @@ ul {
   align-items: center;
   list-style: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   gap: 2rem;
   text-align: center;
 }
@@ -294,6 +294,7 @@ ul {
 .item {
   display: flex;
   align-items: center;
+  padding: 0.5rem 0.5rem;
 }
 
 .item:hover {
@@ -315,4 +316,101 @@ ul {
   width: 100%;
   height: 300px;
   object-fit: cover;
+}
+
+.recommended {
+  width: 100%;
+  background-color: #311178;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recommended h3 {
+  padding: 2rem 4rem;
+  width: 80%;
+  color: white;
+  font-size: 2rem;
+}
+
+.secondary-color {
+  background-color: #311178;
+}
+
+.top-games {
+  width: 100%;
+  background-color: rgb(70, 24, 172);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-games h3 {
+  padding: 2rem 4rem;
+  width: 80%;
+  color: white;
+  font-size: 2rem;
+}
+
+.listing-card .game-image {
+  background-image: url(./listing2.png);
+}
+
+.gift-cards {
+  width: 100%;
+  background-color: #311178;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gift-cards h3 {
+  padding: 2rem 4rem;
+  width: 80%;
+  color: white;
+  font-size: 2rem;
+}
+
+@media (max-width: 1400px) {
+  header {
+    padding: 0 0;
+  }
+
+  .nav-contents {
+    padding: 0 0;
+  }
+
+  .shop-categories {
+    padding: 4rem 0;
+  }
+
+  .physical-listings {
+    padding: 0 0;
+  }
+
+  .listing-cards {
+    padding: 0 0;
+  }
+
+  .top-games h3 {
+    padding: 2rem 0;
+  }
+
+  .gift-cards h3 {
+    padding: 2rem 0;
+  }
+
+  .recommended h3 {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 1236px) {
+  nav {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
 }
