@@ -216,11 +216,20 @@ header {
   gap: 0.5rem;
 }
 
+.language:hover {
+  color: yellow;
+}
+
 .svg-wrap {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
+
+.svg-wrap:hover {
+  color: yellow;
+}
+
 .svg {
   width: 1.5rem;
   height: 1.5rem;
@@ -252,6 +261,16 @@ nav {
   justify-content: center;
 }
 
+.burger {
+  width: 2rem;
+  height: 2rem;
+}
+
+nav .nav-contents ul .item-burger {
+  display: flex;
+  align-items: center;
+}
+
 .nav-contents {
   height: 50px;
   width: 80%;
@@ -273,7 +292,15 @@ ul {
 }
 
 .item {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+
+.item:hover {
+  color: yellow;
+  background-color: rgb(21, 21, 87);
+  height: 100%;
+  align-items: center;
 }
 
 .main {
