@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4618ac;
+}
+
+.shop-categories {
+  background-color: #4618ac;
+  padding: 0 4rem;
+  width: 80%;
+  padding-top: 4rem;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.category i {
+  font-size: 1.5rem;
+}
+
+.physical-listings {
+  padding: 0 4rem;
+  width: 80%;
+  background-color: #4618ac;
+  color: white;
+}
+
+.physical-listings h3 {
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.listing-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.listing-category {
+  display: flex;
+  gap: 1rem;
+  padding: 0.7rem 0rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.listing-category i {
+  font-size: 1.2rem;
+}
+
+.selected-category {
+  background-color: #351183;
+}
+
+.listing-subcategories {
+  background-color: #351183;
+  padding: 0.4rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.listing-subcategory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listing-subcategory i {
+  padding: 0.6rem 0;
+  font-size: 2rem;
+}
+
+.subcategory-see-all {
+  color: #b3aac9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #4618ac;
+}
+
+.listing-cards {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 4rem;
+  width: 80%;
+  background-color: #4618ac;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.listing-card {
+  height: 400px;
+  color: #727ba6;
+}
+
+.listing-card .image-section {
+  height: 60%;
+  background-image: url(./listing.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.listing-card .text-section {
+  height: 40%;
+  background-color: #1f0a4d;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .listing-title {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .price {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .condition {
+    font-weight: 500;
+    font-size: 0.8rem;
+  }
+
+  .shipping {
+    font-size: 0.8rem;
+  }
+}
+
+.show-all-listings {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0 4rem;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: #4618ac;
+
+  button {
+    all: unset;
+    padding: 0.5rem 0;
+    text-align: center;
+    width: 200px;
+    color: white;
+    border: 1px solid white;
+  }
+}
